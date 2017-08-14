@@ -8,12 +8,14 @@ import { LoadingComponent } from './loading/loading.component';
 import { UploadsListComponent } from './uploads-list/uploads-list.component';
 
 import { UploadService } from "./upload.service";
+import { UploadDetailComponent } from './upload-detail/upload-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoadingComponent,
-    UploadsListComponent
+    UploadsListComponent,
+    UploadDetailComponent
   ],
   imports: [
     BrowserModule,
