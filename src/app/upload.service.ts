@@ -55,12 +55,12 @@ export class UploadService {
   
   
   
-    // Writes the file details to the realtime db
+    // Escribe los detalles del archivo al realtime db
     private saveFileData(upload: Upload) {
       this.db.list(`${this.basePath}/`).push(upload);
     }
   
-    // Writes the file details to the realtime db
+    // borra los detalles del realtime db
     private deleteFileData(key: string) {
       return this.db.list(`${this.basePath}/`).remove(key);
     }
